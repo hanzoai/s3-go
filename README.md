@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="s3-go" width="880"></p>
+
 # Hanzo Storage Go SDK
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/hanzoai/storage-go.svg)](https://pkg.go.dev/github.com/hanzoai/storage-go)
