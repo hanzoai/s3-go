@@ -23,7 +23,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // FGetObject - download contents of an object to a local file.

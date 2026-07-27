@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/encrypt"
 )
 
 // AdvancedGetOptions for internal use by MinIO server - not intended for client use.

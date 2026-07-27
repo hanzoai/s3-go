@@ -20,7 +20,7 @@ package set_test
 import (
 	"fmt"
 
-	"github.com/hanzoai/s3-go/pkg/set"
+	"github.com/hanzos3/go/pkg/set"
 )
 
 // Example demonstrates basic usage of generic Set with integers

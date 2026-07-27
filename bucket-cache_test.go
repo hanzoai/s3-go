@@ -28,9 +28,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hanzoai/s3-go/pkg/credentials"
-	"github.com/hanzoai/s3-go/pkg/kvcache"
-	"github.com/hanzoai/s3-go/pkg/signer"
+	"github.com/hanzos3/go/pkg/credentials"
+	"github.com/hanzos3/go/pkg/kvcache"
+	"github.com/hanzos3/go/pkg/signer"
 )
 
 // Tests validate kvCache operations.

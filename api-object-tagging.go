@@ -24,8 +24,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
-	"github.com/hanzoai/s3-go/pkg/tags"
+	"github.com/hanzos3/go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/tags"
 )
 
 // PutObjectTaggingOptions holds an object version id

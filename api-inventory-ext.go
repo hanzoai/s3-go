@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // This file contains the inventory API extension for MinIO server. It is not

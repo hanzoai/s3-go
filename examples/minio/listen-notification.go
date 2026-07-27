@@ -24,8 +24,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/hanzoai/s3-go"
-	"github.com/hanzoai/s3-go/pkg/credentials"
+	"github.com/hanzos3/go"
+	"github.com/hanzos3/go/pkg/credentials"
 )
 
 func main() {

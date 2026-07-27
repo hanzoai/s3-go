@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/hanzoai/s3-go/pkg/cors"
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/cors"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // SetBucketCors sets the Cross-Origin Resource Sharing (CORS) configuration for the bucket.

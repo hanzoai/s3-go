@@ -21,8 +21,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/hanzoai/s3-go/pkg/credentials"
-	"github.com/hanzoai/s3-go/pkg/policy"
+	"github.com/hanzos3/go/pkg/credentials"
+	"github.com/hanzos3/go/pkg/policy"
 )
 
 // Tests valid hosts for location.

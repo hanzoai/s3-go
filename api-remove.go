@@ -27,7 +27,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // useMultiDeleteForBulkDelete returns true if the client should use

@@ -25,8 +25,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/encrypt"
-	"github.com/hanzoai/s3-go/pkg/tags"
+	"github.com/hanzos3/go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/tags"
 )
 
 // expirationDateFormat date format for expiration key in json policy.

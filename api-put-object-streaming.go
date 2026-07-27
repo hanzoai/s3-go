@@ -30,7 +30,7 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // putObjectMultipartStream - upload a large object using

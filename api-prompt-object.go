@@ -24,7 +24,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // PromptObject performs language model inference with the prompt and referenced object as context.

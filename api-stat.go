@@ -21,7 +21,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // BucketExists verifies if bucket exists and you have permission to access it. Allows for a Context to

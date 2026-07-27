@@ -22,7 +22,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/hanzoai/s3-go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/encrypt"
 )
 
 // Core - Inherits Client and adds new methods to expose the low level S3 APIs.

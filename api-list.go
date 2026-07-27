@@ -26,7 +26,7 @@ import (
 	"slices"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // ListBuckets list all buckets owned by this authenticated user.

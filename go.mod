@@ -1,4 +1,4 @@
-module github.com/hanzoai/s3-go
+module github.com/hanzos3/go
 
 go 1.26.1
 

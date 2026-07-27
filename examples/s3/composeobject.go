@@ -24,9 +24,9 @@ import (
 	"context"
 	"log"
 
-	minio "github.com/hanzoai/s3-go"
-	"github.com/hanzoai/s3-go/pkg/credentials"
-	"github.com/hanzoai/s3-go/pkg/encrypt"
+	minio "github.com/hanzos3/go"
+	"github.com/hanzos3/go/pkg/credentials"
+	"github.com/hanzos3/go/pkg/encrypt"
 )
 
 func main() {

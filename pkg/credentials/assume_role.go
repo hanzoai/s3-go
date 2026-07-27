@@ -30,7 +30,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/signer"
+	"github.com/hanzos3/go/pkg/signer"
 )
 
 // AssumeRoleResponse contains the result of successful AssumeRole request.

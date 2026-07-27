@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hanzoai/s3-go/pkg/set"
+	"github.com/hanzos3/go/pkg/set"
 )
 
 // EventType is a S3 notification event associated to the bucket notification configuration

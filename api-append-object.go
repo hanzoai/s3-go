@@ -26,7 +26,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // AppendObjectOptions https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-append.html

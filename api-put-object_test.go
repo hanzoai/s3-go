@@ -23,7 +23,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hanzoai/s3-go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/encrypt"
 )
 
 func TestPutObjectOptionsValidate(t *testing.T) {

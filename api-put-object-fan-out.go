@@ -28,7 +28,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/encrypt"
 )
 
 // PutObjectFanOutEntry is per object entry fan-out metadata

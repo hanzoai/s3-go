@@ -31,8 +31,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/hanzoai/s3-go/pkg/encrypt"
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // CSVFileHeaderInfo - is the parameter for whether to utilize headers.

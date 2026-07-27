@@ -24,9 +24,9 @@ import (
 	"net/url"
 	"path"
 
-	"github.com/hanzoai/s3-go/pkg/credentials"
-	"github.com/hanzoai/s3-go/pkg/s3utils"
-	"github.com/hanzoai/s3-go/pkg/signer"
+	"github.com/hanzos3/go/pkg/credentials"
+	"github.com/hanzos3/go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/signer"
 )
 
 // GetBucketLocation - get location for the bucket name from location cache, if not

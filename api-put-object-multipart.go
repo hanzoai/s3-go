@@ -32,8 +32,8 @@ import (
 	"strings"
 
 	"github.com/google/uuid"
-	"github.com/hanzoai/s3-go/pkg/encrypt"
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 func (c *Client) putObjectMultipart(ctx context.Context, bucketName, objectName string, reader io.Reader, size int64,

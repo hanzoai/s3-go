@@ -28,8 +28,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/hanzoai/s3-go/pkg/replication"
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/replication"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // RemoveBucketReplication removes the replication configuration from an existing bucket.

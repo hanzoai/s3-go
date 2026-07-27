@@ -50,12 +50,12 @@ import (
 	"github.com/dustin/go-humanize"
 	"github.com/google/uuid"
 
-	"github.com/hanzoai/s3-go"
-	"github.com/hanzoai/s3-go/pkg/cors"
-	"github.com/hanzoai/s3-go/pkg/credentials"
-	"github.com/hanzoai/s3-go/pkg/encrypt"
-	"github.com/hanzoai/s3-go/pkg/notification"
-	"github.com/hanzoai/s3-go/pkg/tags"
+	"github.com/hanzos3/go"
+	"github.com/hanzos3/go/pkg/cors"
+	"github.com/hanzos3/go/pkg/credentials"
+	"github.com/hanzos3/go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/notification"
+	"github.com/hanzos3/go/pkg/tags"
 )
 
 const letterBytes = "abcdefghijklmnopqrstuvwxyz01234569"

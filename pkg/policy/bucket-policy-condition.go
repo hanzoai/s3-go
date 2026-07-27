@@ -18,7 +18,7 @@
 package policy
 
 import (
-	"github.com/hanzoai/s3-go/pkg/set"
+	"github.com/hanzos3/go/pkg/set"
 )
 
 // ConditionKeyMap - map of policy condition key and value.

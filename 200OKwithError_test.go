@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/credentials"
+	"github.com/hanzos3/go/pkg/credentials"
 )
 
 func Test200MultipartUploadWithSpaces(t *testing.T) {

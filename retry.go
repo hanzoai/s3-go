@@ -27,7 +27,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/set"
+	"github.com/hanzos3/go/pkg/set"
 )
 
 // MaxRetry is the maximum number of retries before stopping.

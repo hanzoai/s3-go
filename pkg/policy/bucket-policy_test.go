@@ -23,7 +23,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hanzoai/s3-go/pkg/set"
+	"github.com/hanzos3/go/pkg/set"
 )
 
 // TestUnmarshalBucketPolicy tests unmarsheling various examples

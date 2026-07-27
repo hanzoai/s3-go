@@ -23,7 +23,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/hanzoai/s3-go/pkg/s3utils"
+	"github.com/hanzos3/go/pkg/s3utils"
 )
 
 // SetBucketPolicy sets the access permissions policy on an existing bucket.

@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/encrypt"
 )
 
 func TestPostPolicySetExpires(t *testing.T) {

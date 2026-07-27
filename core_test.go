@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hanzoai/s3-go/pkg/credentials"
-	"github.com/hanzoai/s3-go/pkg/encrypt"
+	"github.com/hanzos3/go/pkg/credentials"
+	"github.com/hanzos3/go/pkg/encrypt"
 )
 
 const (
