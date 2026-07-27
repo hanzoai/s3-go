@@ -1,6 +1,6 @@
 module github.com/hanzos3/go
 
-go 1.26.1
+go 1.26.5
 
 require (
 	github.com/dustin/go-humanize v1.0.1
