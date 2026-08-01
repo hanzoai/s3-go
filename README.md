@@ -1,17 +1,23 @@
 <p align="center"><img src=".github/hero.svg" alt="s3-go" width="880"></p>
 
-# Hanzo Storage Go SDK
+# Hanzo S3 Go SDK
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/hanzoai/storage-go.svg)](https://pkg.go.dev/github.com/hanzoai/storage-go)
-[![CI](https://github.com/hanzoai/storage-go/actions/workflows/ci.yml/badge.svg)](https://github.com/hanzoai/storage-go/actions/workflows/ci.yml)
-[![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/hanzoai/storage-go/blob/master/LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/github.com/hanzos3/go.svg)](https://pkg.go.dev/github.com/hanzos3/go)
+[![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](LICENSE)
 
-Go client SDK for Hanzo Storage (S3-compatible object storage). Built on MinIO Go client.
+Go client for [Hanzo S3](https://github.com/hanzoai/s3), our S3-compatible
+object storage. Built on the MinIO Go client, so the declared Go package is
+`minio` — alias the import and the rest reads as you would expect.
+
+One name for one thing: the product is **Hanzo S3**, the repository is
+`hanzoai/s3-go`, and the module is `github.com/hanzos3/go`. "Hanzo Storage"
+is the retired name — `hanzoai/storage` and `hanzoai/storage-go` are old
+paths, not separate products.
 
 ## Install
 
 ```sh
-go get github.com/hanzoai/storage-go
+go get github.com/hanzos3/go
 ```
 
 ## Quick Start
@@ -23,12 +29,12 @@ import (
 	"context"
 	"log"
 
-	storage "github.com/hanzoai/storage-go"
-	"github.com/hanzoai/storage-go/pkg/credentials"
+	s3 "github.com/hanzos3/go"
+	"github.com/hanzos3/go/pkg/credentials"
 )
 
 func main() {
-	client, err := storage.New("storage.hanzo.ai", &storage.Options{
+	client, err := s3.New("s3.hanzo.ai", &s3.Options{
 		Creds:  credentials.NewStaticV4("YOUR-ACCESS-KEY", "YOUR-SECRET-KEY", ""),
 		Secure: true,
 	})
@@ -46,7 +52,7 @@ func main() {
 
 ```go
 ctx := context.Background()
-err := client.MakeBucket(ctx, "my-bucket", storage.MakeBucketOptions{
+err := client.MakeBucket(ctx, "my-bucket", s3.MakeBucketOptions{
 	Region: "us-east-1",
 })
 if err != nil {
@@ -64,7 +70,7 @@ if err != nil {
 defer file.Close()
 
 info, err := client.PutObject(ctx, "my-bucket", "data.bin", file, -1,
-	storage.PutObjectOptions{ContentType: "application/octet-stream"})
+	s3.PutObjectOptions{ContentType: "application/octet-stream"})
 if err != nil {
 	log.Fatalln(err)
 }
@@ -74,7 +80,7 @@ log.Printf("uploaded: %s (%d bytes)\n", info.Key, info.Size)
 ### Download an Object
 
 ```go
-obj, err := client.GetObject(ctx, "my-bucket", "data.bin", storage.GetObjectOptions{})
+obj, err := client.GetObject(ctx, "my-bucket", "data.bin", s3.GetObjectOptions{})
 if err != nil {
 	log.Fatalln(err)
 }
@@ -94,7 +100,7 @@ if _, err := io.Copy(localFile, obj); err != nil {
 ### List Objects
 
 ```go
-for obj := range client.ListObjects(ctx, "my-bucket", storage.ListObjectsOptions{Recursive: true}) {
+for obj := range client.ListObjects(ctx, "my-bucket", s3.ListObjectsOptions{Recursive: true}) {
 	if obj.Err != nil {
 		log.Fatalln(obj.Err)
 	}
@@ -105,7 +111,7 @@ for obj := range client.ListObjects(ctx, "my-bucket", storage.ListObjectsOptions
 ### Remove an Object
 
 ```go
-err := client.RemoveObject(ctx, "my-bucket", "data.bin", storage.RemoveObjectOptions{})
+err := client.RemoveObject(ctx, "my-bucket", "data.bin", s3.RemoveObjectOptions{})
 if err != nil {
 	log.Fatalln(err)
 }
@@ -115,7 +121,7 @@ if err != nil {
 
 ```go
 info, err := client.FPutObject(ctx, "my-bucket", "backup.tar.gz", "/tmp/backup.tar.gz",
-	storage.PutObjectOptions{ContentType: "application/gzip"})
+	s3.PutObjectOptions{ContentType: "application/gzip"})
 if err != nil {
 	log.Fatalln(err)
 }
@@ -126,7 +132,7 @@ log.Printf("uploaded %s (%d bytes)\n", info.Key, info.Size)
 
 Full API documentation is available on pkg.go.dev:
 
-- [github.com/hanzoai/storage-go](https://pkg.go.dev/github.com/hanzoai/storage-go)
+- [github.com/hanzos3/go](https://pkg.go.dev/github.com/hanzos3/go)
 
 ### Bucket Operations
 
@@ -175,10 +181,10 @@ Full API documentation is available on pkg.go.dev:
 
 ## Examples
 
-Working examples are in the [`examples/`](https://github.com/hanzoai/storage-go/tree/master/examples) directory:
+Working examples live in [`examples/`](examples):
 
-- [`examples/s3/`](https://github.com/hanzoai/storage-go/tree/master/examples/s3) -- S3-compatible operations
-- [`examples/minio/`](https://github.com/hanzoai/storage-go/tree/master/examples/minio) -- Extension operations
+- [`examples/s3/`](examples/s3) -- S3-compatible operations
+- [`examples/minio/`](examples/minio) -- extension operations
 
 ## Attribution
 
