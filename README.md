@@ -188,7 +188,6 @@ Working examples live in [`examples/`](examples):
 
 ## Attribution
 
-Based on [MinIO Go Client SDK](https://github.com/minio/minio-go). See upstream [LICENSE](https://github.com/minio/minio-go/blob/master/LICENSE) for attribution.
 
 ## License
 
