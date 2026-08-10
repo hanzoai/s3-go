@@ -6,10 +6,10 @@ require (
 	github.com/dustin/go-humanize v1.0.1
 	github.com/go-ini/ini v1.67.0
 	github.com/google/uuid v1.6.0
+	github.com/hanzos3/crc64nvme v1.1.2
+	github.com/hanzos3/md5-simd v1.1.3
 	github.com/klauspost/compress v1.18.2
 	github.com/klauspost/crc32 v1.3.0
-	github.com/minio/crc64nvme v1.1.1
-	github.com/minio/md5-simd v1.1.2
 	github.com/rs/xid v1.6.0
 	github.com/tinylib/msgp v1.6.1
 	go.yaml.in/yaml/v3 v3.0.4
