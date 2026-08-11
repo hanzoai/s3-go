@@ -2,16 +2,16 @@
 
 # Hanzo Storage Go SDK
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/hanzoai/storage-go.svg)](https://pkg.go.dev/github.com/hanzoai/storage-go)
-[![CI](https://github.com/hanzoai/storage-go/actions/workflows/ci.yml/badge.svg)](https://github.com/hanzoai/storage-go/actions/workflows/ci.yml)
-[![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/hanzoai/storage-go/blob/master/LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/github.com/hanzos3/go.svg)](https://pkg.go.dev/github.com/hanzos3/go)
+[![CI](https://github.com/hanzos3/go/actions/workflows/ci.yml/badge.svg)](https://github.com/hanzos3/go/actions/workflows/ci.yml)
+[![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/hanzos3/go/blob/main/LICENSE)
 
 Go client SDK for Hanzo Storage (S3-compatible object storage). Built on MinIO Go client.
 
 ## Install
 
 ```sh
-go get github.com/hanzoai/storage-go
+go get github.com/hanzos3/go
 ```
 
 ## Quick Start
@@ -23,8 +23,8 @@ import (
 	"context"
 	"log"
 
-	storage "github.com/hanzoai/storage-go"
-	"github.com/hanzoai/storage-go/pkg/credentials"
+	storage "github.com/hanzos3/go"
+	"github.com/hanzos3/go/pkg/credentials"
 )
 
 func main() {
@@ -126,7 +126,7 @@ log.Printf("uploaded %s (%d bytes)\n", info.Key, info.Size)
 
 Full API documentation is available on pkg.go.dev:
 
-- [github.com/hanzoai/storage-go](https://pkg.go.dev/github.com/hanzoai/storage-go)
+- [github.com/hanzos3/go](https://pkg.go.dev/github.com/hanzos3/go)
 
 ### Bucket Operations
 
@@ -175,10 +175,10 @@ Full API documentation is available on pkg.go.dev:
 
 ## Examples
 
-Working examples are in the [`examples/`](https://github.com/hanzoai/storage-go/tree/master/examples) directory:
+Working examples are in the [`examples/`](https://github.com/hanzos3/go/tree/main/examples) directory:
 
-- [`examples/s3/`](https://github.com/hanzoai/storage-go/tree/master/examples/s3) -- S3-compatible operations
-- [`examples/minio/`](https://github.com/hanzoai/storage-go/tree/master/examples/minio) -- Extension operations
+- [`examples/s3/`](https://github.com/hanzos3/go/tree/main/examples/s3) -- S3-compatible operations
+- [`examples/minio/`](https://github.com/hanzos3/go/tree/main/examples/minio) -- Extension operations
 
 ## Attribution
 
