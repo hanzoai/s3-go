@@ -40,7 +40,7 @@ import (
 	"sync"
 	"time"
 
-	md5simd "github.com/minio/md5-simd"
+	md5simd "github.com/hanzos3/md5-simd"
 	"github.com/hanzos3/go/pkg/s3utils"
 	"github.com/hanzos3/go/pkg/tags"
 )

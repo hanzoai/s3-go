@@ -31,7 +31,7 @@ import (
 	"strings"
 
 	"github.com/klauspost/crc32"
-	"github.com/minio/crc64nvme"
+	"github.com/hanzos3/crc64nvme"
 )
 
 // ChecksumMode contains information about the checksum mode on the object

@@ -28,7 +28,7 @@ import (
 
 	"github.com/hanzos3/go"
 	"github.com/hanzos3/go/pkg/credentials"
-	"github.com/minio/sio"
+	"github.com/hanzos3/sio"
 	"golang.org/x/crypto/argon2"
 )
 

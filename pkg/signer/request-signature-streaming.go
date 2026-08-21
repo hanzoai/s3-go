@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	md5simd "github.com/minio/md5-simd"
+	md5simd "github.com/hanzos3/md5-simd"
 )
 
 // Reference for constants used below -

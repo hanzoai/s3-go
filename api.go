@@ -39,7 +39,7 @@ import (
 	"time"
 
 	"github.com/dustin/go-humanize"
-	md5simd "github.com/minio/md5-simd"
+	md5simd "github.com/hanzos3/md5-simd"
 	"github.com/hanzos3/go/pkg/credentials"
 	"github.com/hanzos3/go/pkg/kvcache"
 	"github.com/hanzos3/go/pkg/s3utils"
