@@ -3,14 +3,14 @@
 Fork of MinIO Go SDK (upstream: `github.com/minio/minio-go`).
 S3-compatible object storage client for Hanzo services.
 
-**Repo**: `github.com/hanzoai/storage-go`
-**Go module**: `github.com/hanzoai/storage-go`
+**Repo**: `github.com/hanzos3/go`
+**Go module**: `github.com/hanzos3/go`
 **Go version**: 1.24.0
 
 ## Usage
 
 ```go
-import "github.com/hanzoai/storage-go"
+import "github.com/hanzos3/go"
 ```
 
 Central type is the `Client` struct in `api.go`. All operations
